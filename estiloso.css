@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --color-primario: #1d2dbd;
+    --color-secundario: #f4f4f4;
+    --color-terciario: #1084c7;
+    --color-texto: #252525;
+    --color-blanco: #fff;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ciber {
+    background: var(--color-terciario);
+    color: var(--color-blanco);
+    padding: 50px;
+    text-align: center;
+}
+
+.abajo {
+    background: var(--color-terciario);
+    color: var(--color-blanco);
+    padding: 50px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.proyecto {
+    background: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+  .imagenpeque {
+    width: 300px;
+    height: auto;
+
+}
+
+.imagendos {
+    width: 800px;
+    height: auto;
+
+}
+
+.btn {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #004494;
+}
+
+footer {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
